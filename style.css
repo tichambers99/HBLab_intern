@@ -1,0 +1,335 @@
+/*reset CSS*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Lexend', sans-serif;
+}
+
+::placeholder {
+	font-family: 'Lexend', sans-serif;
+  }
+
+main {
+	min-height: 100vh;
+	background: rgb(225,243,251);
+	background: linear-gradient(315deg, rgba(225,243,251,1) 11%, rgba(34,176,238,1) 71%, rgba(0,212,255,1) 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.align--left{
+	text-align: left;
+}
+
+.align--center{
+	text-align: center;
+}
+
+.align--right{
+	text-align: right;
+}
+
+.content {
+	background: rgb(255,255,255);
+	min-width: 80%;
+	min-height: 85%;
+	border-radius: 5px;
+	display: flex;
+}
+
+.sidebar {
+	flex-basis: 25%;
+	border-right: solid 2px #e0e0e0;
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar__heading{
+	flex-basis: 10%;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #AAAAAA;
+	border-bottom: solid 2px #e0e0e0;
+}
+
+.sidebar__user{
+	flex-basis: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.content_sidebar_user_infor{
+	padding: 15px;
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: solid 2px #e0e0e0;
+}
+
+.user__avatar {
+	margin: 0px 10px 10px 10px;
+	height: 60px;
+	width: 60px;
+	border-radius: 60px;
+}
+
+.user__name{
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.user__mail{
+	text-align: center;
+	font-size: 12px;
+}
+
+.user_icon{
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.user_icon_item{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.icon_background{
+	background-color: #e1f7fa;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.user_icon_item i{
+	color: rgb(16, 136, 216);
+	font: 50px;
+}
+
+i:hover{
+	color: rgb(16, 136, 216);
+	transition: 0.2s;
+}
+
+.user_icon_item i:hover{
+	color: rgb(226, 241, 15);
+	transition: 0.2s;
+}
+
+.infor__heading {
+	font-size: bolder;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.user_icon_item .badge {
+	text-align: center;
+	font-size: 8px;
+	position: absolute;
+	top: -3px;
+	right: -3px;
+	padding: 2px;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background-color: red;
+	color: white;
+  }
+
+.progress {
+	margin-top: 10px;
+}
+
+.progress__percent{
+	font-size: 12px;
+	text-align: right;
+}
+
+.progress__total{
+	width: 100%;
+	height: 8px;
+	border-radius: 4px;
+	background-color: rgb(223, 223, 223);
+}
+
+.progress__done{
+	width: 40%;
+	height: 8px;
+	border-radius: 4px;
+	background-color: rgb(16, 136, 216);
+}
+
+.progress_work{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.progress_work_item{
+	margin-right: 10px;
+}
+
+.progress_work_item:last-child {
+	margin-right: 0px;
+  }
+.progress_work_item_number{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.progress_work_item_text{
+	font-size: 12px;
+	text-align: center;
+}
+
+.project{
+	flex-basis: 30%;
+	padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    border-bottom: solid 2px #e0e0e0;
+}
+
+.project__list{
+	font-size: 12px;
+}
+
+.project__list div{
+	margin-bottom: 5px;
+}
+
+.project__list div:last-child{
+	margin-bottom: 0px;
+}
+
+.teams{
+	flex-basis: 20%;
+	padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.teams__lists{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.teams__avatar {
+	height: 30px;
+	width: 30px;
+	border-radius: 60px;
+}
+
+.content_calendar{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar{
+	flex-basis: 10%;
+	padding: 5px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: solid 2px #e0e0e0;
+}
+
+
+/* flex:1 make size of flex box with the same size*/
+.flexbox__1{
+	flex: 1;
+	align-items: center;
+}
+
+.navbar--search{
+	border: none;
+}
+
+.navbar--search:focus{
+	outline: none;
+}
+
+.container{
+	height: 100%;
+	background: #f5f5f5;
+	padding: 10px 30px 30px 30px;
+}
+
+.container__heading{
+	margin: 5px 10px 15px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+    width: 100px;
+	height: 30px;
+	border: solid 2px rgb(16, 136, 216);
+	padding: 5px;
+	border-radius: 30px;
+	color:rgb(16, 136, 216);
+	font-weight: 500;
+}
+
+.btn:hover{
+	background: rgb(16, 136, 216);
+	color: #FFF;
+	transition: all 0.3s;
+}
+
+.btn:focus{
+	outline: none;
+}
+
+.btn--blue {
+	background: rgb(16, 136, 216);
+	color: #FFF;
+}
+
+.calendar__heading--month{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.month_text{
+	margin: 0px 5px;
+	font-weight: bold;
+}
+
+.year_text{
+	font-size: 12px;
+	color: rgb(114, 105, 94);
+}
+
+.calendar{
+	min-height: 70%;
+	min-width: 80%;
+	overflow: hidden;
+}

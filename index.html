@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./table.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="sidebar">
+                <h4 class="sidebar__heading">TASK MANAGER</h4>
+                <div class="sidebar__user">
+                    <div class="content_sidebar_user_infor">
+                        <img class="user__avatar" src="./img/avatar.jpg">
+                        <div class="user">
+                            <div class="user__name">Natalie Smith</div>
+                            <div class="user__mail">natalie.smith@gmail.com</div>
+                            <div class="user_icon">
+                                <div class="user_icon_item">
+                                    <div class="icon_background">
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                </div>
+                                <div class="user_icon_item">
+                                    <div class="icon_background">
+                                        <i class="fas fa-envelope"></i>
+                                    </div> 
+                                    <span class="badge">3</span>
+                                </div>
+                                <div class="user_icon_item">
+                                    <div class="icon_background">
+                                        <i class="fas fa-bell"></i>
+                                    </div> 
+                                    <span class="badge">3</span>
+                                </div>     
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress__percent">04/12</div>
+                            <div class="progress__total">
+                                <div class="progress__done"></div>
+                            </div>
+                            <div class="progress_work">
+                                <div class="progress_work_item">
+                                    <div class="progress_work_item_number">12</div>
+                                    <div class="progress_work_item_text">Completed Task</div>
+                                </div>
+                                <div class="progress_work_item">
+                                    <div class="progress_work_item_number">22</div>
+                                    <div class="progress_work_item_text">Todo Task</div>
+                                </div>
+                                <div class="progress_work_item">
+                                    <div class="progress_work_item_number">69</div>
+                                    <div class="progress_work_item_text">All Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="infor__heading">PROJECTS</div>
+                        <div class="project__list">
+                            <div>
+                                <i class="far fa-circle" style="color: blueviolet;"></i> Marketing
+                            </div>
+                            <div>
+                                <i class="far fa-circle" style="color: blue;"></i> Design
+                            </div>
+                            <div>
+                                <i class="far fa-circle" style="color: gold;"></i> Development
+                            </div>
+                            <div>
+                                <i class="far fa-circle" style="color: red;"></i> Finance
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teams">
+                        <div class="infor__heading">TEAMS</div>
+                        <div class="teams__lists">
+                            <img src="./img/ava1.jpg" alt="avatar_teams" class="teams__avatar">
+                            <img src="./img/ava2.jpg" alt="avatar_teams" class="teams__avatar">
+                            <img src="./img/ava3.jpg" alt="avatar_teams" class="teams__avatar">
+                            <img src="./img/ava4.jpg" alt="avatar_teams" class="teams__avatar">
+                            <img src="./img/avatar.jpg" alt="avatar_teams" class="teams__avatar">
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="content_calendar">
+                <div class="navbar">
+                    <div class="flexbox__1 align--left">
+                        <i class="fas fa-search"></i>
+                        <input class="navbar--search" placeholder="Search">
+                    </div>
+                    <h3 class="flexbox__1 align--center">Calendar</h3>
+                    <div class="flexbox__1 align--right">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    
+                </div>
+                <div class="container">
+                    <div class="container__heading">
+                        <div class="flexbox__1 align--left">
+                            <button class="btn">
+                                <span class="btn__span--blue">Week</span>
+                                <span>Month</span>
+                            </button>
+                        </div>
+
+                        <div class="flexbox__1 align--center">
+                            <div class="calendar__heading--month">
+                                <i class="fas fa-chevron-left"></i>
+                                <div class="month_text">October</div>
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="year_text align--center">2018</div>
+                        </div>
+
+                        <div class="flexbox__1 align--right">
+                            <button onclick="myFunction()" class="btn">Weekends</button>
+                            <button class="btn btn--blue">Add tasks</button>
+                        </div>
+                    </div>
+                    
+                    <div class="calendar">
+                        <table>
+                            <tr>
+                                <th>
+                                    Monday
+                                </th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th class="weekends">Saturday</th>
+                                <th class="weekends">Sunday</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="calendar__date">30</div>
+                                </td>
+                                <td class="td__design">
+                                    <div class="calendar__date">31</div>
+                                    <div class="calendar__todo">
+                                        <div class="todo__title">Design</div>
+                                        <ul>
+                                            <li>HTML CSS work</li>
+                                            <li>What the hell am i doing</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">1</div>
+                                </td>
+                                <td class="td__marketing">
+                                    <div class="calendar__date">2</div>
+                                    <div class="calendar__todo">
+                                        <div class="todo__title">Marketing</div>
+                                        <ul>
+                                            <li>Javascript work</li>
+                                            <li>Trying with your best</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">3</div>
+                                </td>
+                                <td class="weekends">
+                                    <div class="calendar__date">4</div>
+                                </td>
+                                <td class="weekends">
+                                    <div class="calendar__date">5</div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="td__development">
+                                    <div class="calendar__date">6</div>
+                                    <div class="calendar__todo">
+                                        <div class="todo__title">Development</div>
+                                        <ul>
+                                            <li>HTML CSS work</li>
+                                            <li>What the hell am i doing</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">7</div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">8</div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">9</div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">10</div>
+                                </td>
+                                <td class="weekends">
+                                    <div class="calendar__date">11</div>
+                                </td>
+                                <td class="weekends">
+                                    <div class="calendar__date">12</div>
+                                </td>   
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="calendar__date">13</div>
+                                </td>
+                                <td class="td__design">
+                                    <div class="calendar__date">14</div>
+                                    <div class="calendar__todo">
+                                        <div class="todo__title">Design</div>
+                                        <ul>
+                                            <li>HTML CSS work</li>
+                                            <li>What the hell am i doing</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">15</div>
+                                </td>
+                                <td class="td__finance">
+                                    <div class="calendar__date">16</div>
+                                    <div class="calendar__todo">
+                                        <div class="todo__title">Finance</div>
+                                        <ul>
+                                            <li>Learning React</li>
+                                            <li>Lifecycle</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">17</div>
+                                </td>
+                                <td class="weekends">
+                                    <div class="calendar__date">18</div>
+                                </td>
+                                <td class="weekends">
+                                    <div class="calendar__date">19</div>
+                                </td>   
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="calendar__date">20</div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">21</div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">22</div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">23</div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">24</div>
+                                </td>
+                                <td class="weekends">
+                                    <div class="calendar__date">25</div>
+                                </td>
+                                <td class="weekends">
+                                    <div class="calendar__date">26</div>
+                                </td>   
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="calendar__date">27</div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">28</div>
+                                </td>
+                                <td class="td__development">
+                                    <div class="calendar__date">29</div>
+                                    <div class="calendar__todo">
+                                        <div class="todo__title">Development</div>
+                                        <ul>
+                                            <li>HTML CSS work</li>
+                                            <li>What the hell am i doing</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">30</div>
+                                </td>
+                                <td>
+                                    <div class="calendar__date">1</div>
+                                </td>
+                                <td class="weekends">
+                                    <div class="calendar__date">2</div>
+                                </td>
+                                <td class="weekends">
+                                    <div class="calendar__date">3</div>
+                                </td>   
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
